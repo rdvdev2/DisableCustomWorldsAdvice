@@ -31,7 +31,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew remapJar
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
@@ -39,4 +39,3 @@ jobs:
         path: |
           build/libs
           !build/libs/*-dev.jar
-          !build/libs/*-sources.jar

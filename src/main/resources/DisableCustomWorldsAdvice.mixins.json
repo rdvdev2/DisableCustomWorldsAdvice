@@ -3,10 +3,8 @@
   "minVersion": "0.8",
   "package": "com.rdvdev2.disablecustomworldsadvice.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "MixinMinecraftClient"
-  ],
   "client": [
+    "MixinMinecraftClient"
   ],
   "injectors": {
     "defaultRequire": 1

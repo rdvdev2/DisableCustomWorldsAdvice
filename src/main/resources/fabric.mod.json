@@ -16,7 +16,6 @@
   "license": "GPL-3.0",
   "icon": "assets/DisableCustomWorldsAdvice/icon.png",
   "environment": "client",
-  "entrypoints": {},
   "mixins": [
     "DisableCustomWorldsAdvice.mixins.json"
   ],

@@ -35,6 +35,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
+        name: mod-jar
         path: |
           build/libs
           !build/libs/*-dev.jar

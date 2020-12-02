@@ -44,6 +44,8 @@ publishing {
     publications {
         gpr(MavenPublication) {
 
+            artifactId = "disable-custom-worlds-advice"
+
             pom {
                 name = "Disable Custom Worlds Advice"
                 description = "Minecraft asking you if you want to load a custom world is annoying. Let's fix it!"

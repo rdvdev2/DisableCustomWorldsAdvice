@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "disablecustomworldsadvice",
+  "id": "disable_custom_worlds_advice",
   "version": "${version}",
   "name": "Disable Custom Worlds Advice",
   "description": "Minecraft asking you if you want to load a custom world is annoying. Let's fix it!",
@@ -14,10 +14,10 @@
     "sources": "https://github.com/rdvdev2/DisableCustomWorldsAdvice"
   },
   "license": "GPL-3.0",
-  "icon": "assets/DisableCustomWorldsAdvice/icon.png",
+  "icon": "assets/disable_custom_worlds_advice/icon.png",
   "environment": "client",
   "mixins": [
-    "DisableCustomWorldsAdvice.mixins.json"
+    "disable_custom_worlds_advice.mixins.json"
   ],
   "depends": {
     "fabricloader": "*",

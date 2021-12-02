@@ -19,5 +19,4 @@ public abstract class MixinMinecraftClient {
     private boolean replaceBl2(boolean bl2) {
         return false;
     }
-
 }

@@ -4,7 +4,7 @@
   "package": "com.rdvdev2.disablecustomworldsadvice.mixin",
   "compatibilityLevel": "JAVA_8",
   "client": [
-    "MixinMinecraftClient"
+    "MixinIntegratedServerLoader"
   ],
   "injectors": {
     "defaultRequire": 1

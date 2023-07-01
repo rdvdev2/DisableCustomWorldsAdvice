@@ -1,4 +1,4 @@
 # Disable Custom Worlds Advice
-![Download count](https://cf.way2muchnoise.eu/401978.svg) ![Compatible versions](https://cf.way2muchnoise.eu/versions/401978.svg)
+![https://modrinth.com/mod/dcwa](https://img.shields.io/modrinth/dt/dcwa?logo=modrinth&label=‎Modrinth&style=for-the-badge) ![https://www.curseforge.com/minecraft/mc-mods/fabric-disable-custom-worlds-advice](https://cf.way2muchnoise.eu/short_401978.svg?badge_style=for_the_badge) ![https://github.com/rdvdev2/DisableCustomWorldsAdvice/releases](https://img.shields.io/github/downloads/rdvdev2/DisableCustomWorldsAdvice/total?style=for-the-badge&logo=github&label=GitHub%20Releases)
 
 This simple mod disables the annoying "Experimental Features" advice that appears every time you create or load a world with custom dimensions or world settings. You can use it if either this screen annoys you as much as it does to me or you are creating a mod with custom worldgen and you want to disable the advice screen (Jar-in-jar if that's your case!).

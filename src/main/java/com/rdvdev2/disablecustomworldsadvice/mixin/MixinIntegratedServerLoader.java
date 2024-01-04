@@ -10,7 +10,7 @@ public abstract class MixinIntegratedServerLoader {
 
     // Set canShowBackupPrompt = false
     @ModifyVariable(
-            method = "start(Lnet/minecraft/client/gui/screen/Screen;Ljava/lang/String;ZZ)V",
+            method = "start(Lnet/minecraft/world/level/storage/LevelStorage$Session;Lcom/mojang/serialization/Dynamic;ZZLjava/lang/Runnable;)V",
             at = @At("HEAD"),
             argsOnly = true,
             index = 4

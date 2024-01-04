@@ -21,8 +21,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.5.1
       with:

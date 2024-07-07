@@ -1,22 +1,26 @@
 package com.rdvdev2.disablecustomworldsadvice.mixin;
 
+import com.mojang.serialization.Lifecycle;
 import net.minecraft.server.integrated.IntegratedServerLoader;
+import net.minecraft.world.SaveProperties;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
+import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(IntegratedServerLoader.class)
 public abstract class MixinIntegratedServerLoader {
 
-    // Set canShowBackupPrompt = false
-    @ModifyVariable(
-            method = "start(Lnet/minecraft/world/level/storage/LevelStorage$Session;Lcom/mojang/serialization/Dynamic;ZZLjava/lang/Runnable;)V",
-            at = @At("HEAD"),
-            argsOnly = true,
-            index = 4
+    // Make SaveProperties.getLifecycle() always return Lifecycle.stable()
+    @Redirect(
+            method = "checkBackupAndStart",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/world/SaveProperties;getLifecycle()Lcom/mojang/serialization/Lifecycle;"
+            )
     )
-    private boolean removeAdviceOnLoad(boolean original) {
-        return false;
+    private Lifecycle removeAdviceOnLoad(SaveProperties saveProperties) {
+        return Lifecycle.stable();
     }
 
     // Set bypassWarnings = true
